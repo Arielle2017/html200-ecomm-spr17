@@ -12,6 +12,7 @@ p {
 /* TODO: size images manually so this is not necessary */
 img {
   max-height: 20rem;
+  max-width: 100%
 }
 
 /***************** NAV *****************/
@@ -58,4 +59,26 @@ h3 {
   font-size: 1.2rem;
   text-align: center;
   color: #2d2d2d;
+}
+
+div.nav-ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav.ul {
+  display: flex;
+}
+
+div.item-container {
+  display: flex;
+  align-items: stretch;
+}
+
+div.col-md-3 {
+  display:block;
+  height: 455px;
+  border: 0.03rem;
+  border-style: solid;
+  text-align: center;
 }
