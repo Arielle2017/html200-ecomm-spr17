@@ -1,3 +1,49 @@
+
+  /*
+
+template.signup.events({
+  "submit form" (event, template) {
+    event.preventDefault();
+
+    let user={
+      email: template.find("[name="emailAddress"]").value,
+      password: template.find("[name="password"]").value
+    };
+
+
+   //for later, set up user email confirmation process
+    Account.createUser (user, (error)=>{
+      if (error){
+        Bert.alert(error.reason, "danger");
+      } else {
+        Meteor.call ("sendVerificationLink", (error, response)=> {
+          if (error) {
+            Bert.alert (error.reason, "danger");
+          } else {
+            Bert.alert ("Welcome!", "success");
+          }
+        });
+      }
+    });
+  }
+}); */
+
+
+
+
+
+
+
+function capture () {
+  event.preventDefault(); //to tell JS not to respond to the default setup, which will slow the loading; stay here, so it can load faster (reletevely)
+  console.log (document.customerInfo.email.value + ", thank you for signing up. Welcome on board!");
+}
+
+
+
+
+
+
 var products = [
   {
     "name": "Reversible Plaid",
@@ -48,4 +94,3 @@ var products = [
     "imageTitle": "twill.jpg"
   }
 ]
-

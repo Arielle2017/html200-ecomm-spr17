@@ -31,6 +31,11 @@ h1 .logo-w {
   font-size: 3.5rem;
 }
 
+template {
+  padding: 10px;
+  
+}
+
 /**************** ASIDE ****************/
 
 input[type="submit"] {
