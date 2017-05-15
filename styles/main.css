@@ -3,6 +3,10 @@ body {
   font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
 }
 
+@media (max-width: 550px) {
+  h1 { font-size: 1.5rem; }
+}
+
 p {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: lighter;
@@ -27,14 +31,20 @@ header img {
   max-height: 6rem;
 }
 
+header {
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 550px) {
+  h1 { font-size: 1.5rem; }
+}
+
 h1 .logo-w {
   font-size: 3.5rem;
 }
 
-template {
-  padding: 10px;
-  
-}
+
 
 /**************** ASIDE ****************/
 
@@ -48,6 +58,8 @@ input[type="submit"] {
 }
 
 /*********** PRODUCTS SECTION ***********/
+
+
 
 section {
   padding: 0 .75rem;
@@ -72,13 +84,24 @@ div.nav-ul {
 }
 
 nav.ul {
-  display: flex;
+  float: left;
+  display: block;
+  width: 16.24%;
+  margin-right: 4.7%;
+}
+
+@media screen and (max-width:800px) {
+  .section {
+    padding: 0;
+    margin-bottom: 2em;
+  }
 }
 
 div.item-container {
   display: flex;
   align-items: stretch;
 }
+
 
 div.col-md-3 {
   display:block;

@@ -33,13 +33,29 @@ template.signup.events({
 
 
 
-
+/* hw5 */
 function capture () {
   event.preventDefault(); //to tell JS not to respond to the default setup, which will slow the loading; stay here, so it can load faster (reletevely)
   console.log (document.customerInfo.email.value + ", thank you for signing up. Welcome on board!");
 }
 
 
+
+
+/* hw 7 add shopping cart */
+function addPrice () {
+  event.preventDefault(); //to tell JS not to respond to the default setup, which will slow the loading; stay here, so it can load faster (reletevely)
+
+var cart=[(products.price)];
+
+$(" .add").click(function(e) {
+var price = $(e.target.parentElement).find(".price").text();
+
+cart.push({
+  price: price
+});
+
+console.log(cart); myFunction();
 
 
 

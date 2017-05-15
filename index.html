@@ -8,7 +8,41 @@
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
 
+  <style>
+  @media (max-width:700px) {
+    body {color: red;}
+  }
 
+  @media (min-width:701px) and (max-width:900px) {
+    body {color: solid pink;}
+  }
+
+  @media (min-width:901px) and (max-width:1200px) {
+    body {color: green;}
+  }
+
+  @media (min-width:1201px) {
+    body {color: gray;}
+    h1 { text-decoration: underline;}
+  }
+
+
+
+  nav.ul {
+    float: left;
+    display: block;
+    width: 16.24%;
+    margin-right: 4.7%;
+  }
+
+  @media screen and (max-width:800px) {
+    .section {
+      padding: 0;
+      margin-bottom: 2em;
+    }
+  }
+
+  </style>
   <!-- <script src="https://use.fontawesome.com/???.js"></script> -->
 </head>
 
@@ -109,7 +143,11 @@
               alt="reversible plaid scarf">
           <p>Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>
           <p>26.99</p>
+          <button class="add">Add</button>
+          <button class="remove">Remove</button>
         </div>
+
+
 
         <div class="col-md-3 col-lg-1">
           <h3>Fringed Plaid</h3>
@@ -119,7 +157,10 @@
               alt="fringed plaid scarf">
           <p>Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
           <p>18.99</p>
+          <button class="add">Add</button>
+          <button class="remove">Remove</button>
         </div>
+
 
         <div class="col-md-3 col-lg-1">
           <h3>Multi Color</h3>
@@ -129,7 +170,9 @@
           alt="multi color scarf">
           <p>The Who What Where Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic.</p>
           <p>22.99</p>
-        </div>
+          <button class="add">Add</button>
+          <button class="remove">Remove</button>
+          </div>
 
         <div class="col-md-3 col-lg-1">
           <h3>Northern Lights</h3>
@@ -139,8 +182,10 @@
           alt="northern lights scarf">
           <p>Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton.</p>
           <p>29.99</p>
-        </div>
+          <button class="add">Add</button>
+          <button class="remove">Remove</button>
       </div>
+    </div>
 
       <div class="row">
         <div class="col-md-3 col-lg-1">
@@ -151,6 +196,8 @@
            alt="ombre infinity scarf">
           <p>A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic.</p>
           <p>11.99</p>
+          <button class="add">Add</button>
+          <button class="remove">Remove</button>
         </div>
 
         <div class="col-md-3 col-lg-1">
@@ -161,6 +208,8 @@
            alt="ashby twill scarf">
           <p>Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool.</p>
           <p>70.99</p>
+          <button class="add">Add</button>
+          <button class="remove">Remove</button>
         </div>
 
         <div class="col-md-3 col-lg-1">
@@ -171,6 +220,8 @@
            alt="wool cable knit scarf">
           <p>Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported.</p>
           <p>49.99</p>
+          <button class="add">Add</button>
+          <button class="remove">Remove</button>
         </div>
 
         <div class="col-md-3 col-lg-1">
@@ -181,6 +232,8 @@
            alt="etro paisley print silk scarf">
           <p>Luxurious silk scarf with subtle paisley pattern. 100% silk.</p>
           <p>26.99</p>
+          <button class="add">Add</button>
+          <button class="remove">Remove</button>
         </div>
       </div>
 
