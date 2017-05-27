@@ -34,28 +34,26 @@ template.signup.events({
 
 
 /* hw5 */
-function capture () {
+function capture() {
   event.preventDefault(); //to tell JS not to respond to the default setup, which will slow the loading; stay here, so it can load faster (reletevely)
   console.log (document.customerInfo.email.value + ", thank you for signing up. Welcome on board!");
 }
 
 
-var s1 = 0;
-var s2 = 0;
-var index = 0;
-
-while (index <= 12) {
-  if (index % 2 == 0) {
-    s1 = s1 + index;
-    console.log(s1);
-  } else {
-    s2 = s2 + index;
-    console.log(s2);
-  }
-
-  index = index + 1;
+addToCart;
+function addToCart () {
+    var allItems = ["add01", "add02", "add03", "add04", "add05", "add06", "add07", "add08"];
+    var addItems = document.getElementById("allItems.[i]");
+    for (var i= 0; i<allItems.length; i++) {
+      allItems[i].onclick=showAnswer;
+    }
 }
 
+function showAnswer (eventObj) {
+  var newItem = eventObj.target;
+  cart = newItem.length;
+  console.log ("You have" +cart+ " items in cart.");
+}
 
 /* add shopping cart
 function addPrice () {

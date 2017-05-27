@@ -64,7 +64,11 @@ input[type="submit"] {
 
 /*********** PRODUCTS SECTION ***********/
 
-
+b {
+  text-align: center;
+  padding: 5px;
+  color: green;
+}
 
 section {
   padding: 0 .75rem;
