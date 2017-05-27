@@ -42,9 +42,26 @@ function capture () {
 
 
 
-/* hw 7 add shopping cart */
+/* add shopping cart
 function addPrice () {
   event.preventDefault(); //to tell JS not to respond to the default setup, which will slow the loading; stay here, so it can load faster (reletevely)
+
+var element = document.getElementsByTag();
+element.onclick=function(){
+  event.preventDefault();
+  function myFunction() {
+
+  }
+}
+
+e.onclick = myFunction;
+*/
+
+
+/*
+var $ =funtion (selector){
+  return document.queySelector(selector);
+};
 
 var cart=[(products.price)];
 
@@ -56,10 +73,10 @@ cart.push({
 });
 
 console.log(cart); myFunction();
+*/
 
 
-
-
+/*
 var products = [
   {
     "name": "Reversible Plaid",
@@ -110,3 +127,4 @@ var products = [
     "imageTitle": "twill.jpg"
   }
 ]
+*/

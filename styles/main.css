@@ -16,16 +16,21 @@ p {
 /* TODO: size images manually so this is not necessary */
 img {
   max-height: 20rem;
-  max-width: 100%
+  max-width: 100%;
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 /***************** NAV *****************/
 
 nav a:hover {
   text-decoration: underline;
+  color: purple;
 }
 
 /**************** HERO *****************/
+
+
 
 header img {
   max-height: 6rem;
@@ -65,6 +70,11 @@ section {
   padding: 0 .75rem;
 }
 
+h1 {
+  background-color: gray;
+}
+
+
 h2 {
   padding-top: 1.5rem;
   font-size: 2rem;
@@ -76,25 +86,72 @@ h3 {
   font-size: 1.2rem;
   text-align: center;
   color: #2d2d2d;
+  padding: 9px;
 }
+
+p {
+  padding-bottom: 9px;
+  padding-top: 9px;
+}
+
+
 
 div.nav-ul {
+  /* display: flex;
+  flex-direction: row; */
+  width: 100%;
+  margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(250, 250, 250, 0.9);
 }
 
-nav.ul {
-  float: left;
+nav {
+  width: 100%;
+}
+
+nav ul {
+  /* float: left;
   display: block;
   width: 16.24%;
-  margin-right: 4.7%;
+  margin-right: 4.7%; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
-@media screen and (max-width:800px) {
-  .section {
-    padding: 0;
-    margin-bottom: 2em;
+nav li {
+    width: 100%;
+    text-align: center;
+    border-bottom: .1m solid white;
+    background-color: pink;
+    padding: 1rem;
+    width: 24.8%;
+    list-style: none;
+    display: inline;
+    font-weight: lighter;
+
+}
+
+@media (max-width: 680px) {
+  nav ul {
+    flex-direction: column;
   }
+  nav li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: .1em solid white;
+  }
+}
+
+nav li.active {
+  background-color: rgba(102, 196, 58, 0.4);
 }
 
 div.item-container {
@@ -102,11 +159,15 @@ div.item-container {
   align-items: stretch;
 }
 
-
 div.col-md-3 {
   display:block;
-  height: 455px;
+  height: 335px;
   border: 0.03rem;
   border-style: solid;
+  border-color: red;
   text-align: center;
+}
+
+section {
+
 }
