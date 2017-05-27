@@ -40,6 +40,21 @@ function capture () {
 }
 
 
+var s1 = 0;
+var s2 = 0;
+var index = 0;
+
+while (index <= 12) {
+  if (index % 2 == 0) {
+    s1 = s1 + index;
+    console.log(s1);
+  } else {
+    s2 = s2 + index;
+    console.log(s2);
+  }
+
+  index = index + 1;
+}
 
 
 /* add shopping cart
